@@ -1,4 +1,13 @@
 /* --------------------------------------
+ *Custom properties
+ ----------------------------------------*/
+:root {
+  --text-secondary: #848199;
+  --bg-hot-package: #3f87f5;
+  --bg-badge: #ff4e4e;
+}
+
+/* --------------------------------------
  *Carousel style or Banner Section Style 
  ----------------------------------------*/
 
@@ -12,6 +21,91 @@
 
 .custom-btn {
   padding: 0.625rem 3.25rem;
+}
+
+/* --------------------------------------
+ *Package Section Style 
+ ----------------------------------------*/
+.section-title {
+  margin-bottom: 7rem;
+}
+
+.package {
+  height: fit-content;
+  width: 100%;
+}
+
+.custom-badge {
+  right: 3%;
+  padding: 5px 10px !important;
+  background-color: var(--bg-badge);
+}
+
+.package.hot-package .custom-badge {
+  display: block !important;
+}
+
+.package-price {
+  font-size: 2.25rem;
+}
+
+.package-title {
+  font-size: 1.75rem;
+}
+
+.package-description {
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.custom-list-item {
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--text-secondary);
+  padding: 5px 0;
+}
+
+.custom-list-item > img {
+  width: 20px;
+  height: 20px;
+}
+
+.package-btn {
+  background-color: rgba(244, 150, 209, 0.1);
+  padding: 0.75rem 4rem;
+  font-size: 15px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.package.hot-package {
+  position: relative;
+  padding: 3rem 2.875rem 2.625rem 2.875rem !important;
+  box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
+  border-radius: 26px;
+}
+
+.package.hot-package,
+.package.hot-package .custom-list-item,
+.package.hot-package .package-description {
+  background-color: var(--bg-hot-package);
+  color: white;
+}
+.package.hot-package .package-btn {
+  width: 100%;
+  background-color: white;
+  color: var(--bg-hot-package);
+  padding: 0.75rem 0;
+}
+
+.package.hot-package img {
+  content: url('../images/icons/check-circle-white.png');
+}
+
+@media (min-width: 600px) {
+  .package {
+    width: 75%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -29,6 +123,10 @@
   .carousal-heading {
     font-size: 2rem;
   }
+
+  .package {
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -45,10 +143,22 @@
   .carousal-heading {
     font-size: 2.5rem;
   }
+
+  .package {
+    width: 75%;
+  }
 }
 
 @media (min-width: 1200px) {
   .carousal-heading {
     font-size: 3rem;
+  }
+
+  .package {
+    width: 100%;
+  }
+
+  .package.hot-package {
+    transform: translateY(-13%);
   }
 }
