@@ -1,0 +1,54 @@
+/* --------------------------------------
+ *Carousel style or Banner Section Style 
+ ----------------------------------------*/
+
+.custom-carousel-inner {
+  height: auto;
+}
+
+.carousal-heading {
+  font-size: 1.5rem;
+}
+
+.custom-btn {
+  padding: 0.625rem 3.25rem;
+}
+
+@media (min-width: 768px) {
+  .custom-carousel-inner {
+    height: 50vh;
+  }
+  .custom-carousel-inner img {
+    height: 100%;
+  }
+
+  .custom-carousal-caption {
+    bottom: 10.25rem;
+  }
+
+  .carousal-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-carousel-inner {
+    height: auto;
+  }
+  .custom-carousal-caption {
+    bottom: 1.25rem;
+  }
+
+  .custom-carousel-inner img {
+    width: 100%;
+  }
+  .carousal-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousal-heading {
+    font-size: 3rem;
+  }
+}
