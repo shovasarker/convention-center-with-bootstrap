@@ -166,7 +166,16 @@
  !--------------------------------
  ----------------------------------------*/
 
+@media (min-width: 540px) {
+  .custom-carousel-img {
+    margin-left: -70%;
+  }
+}
+
 @media (min-width: 600px) {
+  .custom-carousel-img {
+    margin-left: -50%;
+  }
   .package {
     width: 75%;
   }
