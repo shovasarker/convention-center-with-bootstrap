@@ -102,6 +102,23 @@
   content: url('../images/icons/check-circle-white.png');
 }
 
+/* --------------------------------------
+ *FAQ Section Style 
+ ----------------------------------------*/
+
+.custom-accordian-item {
+  border: 1px solid #d5e5fb;
+}
+.custom-accordian-btn:not(.collapsed) {
+  color: black;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.custom-accordian-btn:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
 @media (min-width: 600px) {
   .package {
     width: 75%;
@@ -109,15 +126,8 @@
 }
 
 @media (min-width: 768px) {
-  .custom-carousel-inner {
-    height: 50vh;
-  }
   .custom-carousel-inner img {
-    height: 100%;
-  }
-
-  .custom-carousal-caption {
-    bottom: 10.25rem;
+    width: 100%;
   }
 
   .carousal-heading {
@@ -132,13 +142,6 @@
 @media (min-width: 992px) {
   .custom-carousel-inner {
     height: auto;
-  }
-  .custom-carousal-caption {
-    bottom: 1.25rem;
-  }
-
-  .custom-carousel-inner img {
-    width: 100%;
   }
   .carousal-heading {
     font-size: 2.5rem;
