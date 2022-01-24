@@ -139,6 +139,10 @@
 /* --------------------------------------
  *Toast Style 
  ----------------------------------------*/
+.toast-container {
+  z-index: 11;
+}
+
 .custom-toast {
   width: fit-content !important;
 }
