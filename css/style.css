@@ -13,8 +13,8 @@
  *Carousel style or Banner Section Style 
  ----------------------------------------*/
 
-.custom-carousel-inner {
-  height: auto;
+.custom-carousel-img {
+  margin-left: -112%;
 }
 
 .carousal-heading {
@@ -23,6 +23,14 @@
 
 .custom-btn {
   padding: 0.625rem 3.25rem;
+}
+
+/* --------------------------------------
+ *Extra Section Style 
+ ----------------------------------------*/
+.extra-title {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 /* --------------------------------------
@@ -165,12 +173,23 @@
 }
 
 @media (min-width: 768px) {
-  .custom-carousel-inner img {
+  .custom-carousel-img {
     width: 100%;
+    margin-left: 0;
+  }
+
+  .custom-carousel-indicators [data-bs-target] {
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
   }
 
   .carousal-heading {
     font-size: 2rem;
+  }
+
+  .extra-title {
+    font-size: 2.5rem;
   }
 
   .package {
@@ -179,8 +198,9 @@
 }
 
 @media (min-width: 992px) {
-  .custom-carousel-inner {
-    height: auto;
+  .custom-carousel-indicators [data-bs-target] {
+    width: 60px;
+    height: 6px;
   }
   .carousal-heading {
     font-size: 2.5rem;
@@ -194,6 +214,9 @@
 @media (min-width: 1200px) {
   .carousal-heading {
     font-size: 3rem;
+  }
+  .extra-title {
+    font-size: 2.625rem;
   }
 
   .package {
