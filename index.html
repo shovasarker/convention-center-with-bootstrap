@@ -22,7 +22,6 @@
 
     <body>
         <!-- header start -->
-
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
                 <div class="container mx-auto">
@@ -30,7 +29,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <img src="./images/icons/menu-2 1.svg" alt="">
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
@@ -361,8 +360,40 @@
             </section>
             <!-- FAQ section end -->
 
+            <!-- Toast start -->
+            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                <div id="liveToast" class="toast show border-0 custom-toast" role="alert" aria-live="assertive"
+                    aria-atomic="true">
+                    <div class="toast-body d-flex p-1 align-items-start border-start border-primary custom-toast-body">
+                        <img src="./images/icons/Vector.svg" class="m-2 " alt="">
+                        <span class="my-2 lh-lg me-3 fw-normal">20% off on next booking</span>
+                        <button type="button" class="btn-close ms-auto custom-close-btn" data-bs-dismiss="toast"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Toast end -->
+
         </main>
         <!-- main section end -->
+
+        <!-- Footer Section start -->
+        <footer class="mt-5 p-5 bg-black">
+            <div class="container mx-auto d-flex flex-column flex-md-row align-items-center justify-content-md-between">
+                <div class="links order-first order-md-last mb-3 mb-md-0">
+                    <h3 class="footer-text fw-normal fs-5 mb-3">Get the App</h3>
+                    <a target="_blank" href="https://apps.apple.com/us/app/magnum-quest/id1561915737">
+                        <img class="d-block mb-3" src="./images/icons/App Store Badge.png" alt="">
+                    </a>
+
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.Knight.GrandQuest">
+                        <img class="d-block" src="./images/icons/Google Play Badge.png" alt="">
+                    </a>
+                </div>
+                <small class="footer-text">&copy; 2022 Sarker's. All right reserved.</small>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
 
     </body>
 

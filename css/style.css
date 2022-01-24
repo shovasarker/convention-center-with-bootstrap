@@ -2,9 +2,11 @@
  *Custom properties
  ----------------------------------------*/
 :root {
+  --text-package: #231d4f;
   --text-secondary: #848199;
   --bg-hot-package: #3f87f5;
   --bg-badge: #ff4e4e;
+  --text-footer: #d9dbe1;
 }
 
 /* --------------------------------------
@@ -45,6 +47,11 @@
   display: block !important;
 }
 
+.package-price,
+.package-title {
+  color: var(--text-package);
+}
+
 .package-price {
   font-size: 2.25rem;
 }
@@ -80,14 +87,16 @@
 
 .package.hot-package {
   position: relative;
-  padding: 3rem 2.875rem 2.625rem 2.875rem !important;
+  padding: 2.875rem 2rem 2.625rem 2rem !important;
   box-shadow: 0px 42px 34px rgba(63, 135, 245, 0.25);
   border-radius: 26px;
 }
 
 .package.hot-package,
 .package.hot-package .custom-list-item,
-.package.hot-package .package-description {
+.package.hot-package .package-description,
+.package.hot-package .package-price,
+.package.hot-package .package-title {
   background-color: var(--bg-hot-package);
   color: white;
 }
@@ -118,6 +127,36 @@
 .custom-accordian-btn:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+
+/* --------------------------------------
+ *Toast Style 
+ ----------------------------------------*/
+.custom-toast {
+  width: fit-content !important;
+}
+
+.custom-toast-body {
+  border-width: 0.5rem !important;
+}
+
+.custom-close-btn {
+  width: 8px;
+  height: 8px;
+}
+
+/* --------------------------------------
+ *Footer Section Style 
+ ----------------------------------------*/
+
+.footer-text {
+  color: var(--text-footer);
+}
+
+/* --------------------------------------
+ !--------------------------------
+ *Media Queries
+ !--------------------------------
+ ----------------------------------------*/
 
 @media (min-width: 600px) {
   .package {
