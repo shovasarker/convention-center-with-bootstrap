@@ -1,10 +1,10 @@
 /* --------------------------------------
- *Custom properties
+ *Custom properties #3f87f5
  ----------------------------------------*/
 :root {
   --text-package: #231d4f;
   --text-secondary: #848199;
-  --bg-hot-package: #3f87f5;
+  --bg-hot-package: #02b290;
   --bg-badge: #ff4e4e;
   --text-footer: #d9dbe1;
 }
@@ -23,6 +23,7 @@
 
 .custom-btn {
   padding: 0.625rem 3.25rem;
+  color: var(--bg-hot-package);
 }
 
 .prev-btn-img {
@@ -35,6 +36,17 @@
 .extra-title {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.extra-btn {
+  background-color: var(--bg-hot-package);
+  border-color: var(--bg-hot-package);
+  transition: all 0.3s ease-in-out;
+}
+
+.extra-btn:hover {
+  background-color: white;
+  color: var(--bg-hot-package) !important;
 }
 
 /* --------------------------------------
@@ -95,6 +107,7 @@
   font-size: 15px;
   line-height: 17px;
   cursor: pointer;
+  color: var(--bg-hot-package);
 }
 
 .package.hot-package {
@@ -153,6 +166,7 @@
 
 .custom-toast-body {
   border-width: 0.5rem !important;
+  border-color: var(--bg-hot-package) !important;
 }
 
 .custom-close-btn {
@@ -216,7 +230,7 @@
 
 @media (min-width: 992px) {
   .custom-carousel-indicators [data-bs-target] {
-    width: 60px;
+    width: 75px;
     height: 6px;
   }
   .carousal-heading {
