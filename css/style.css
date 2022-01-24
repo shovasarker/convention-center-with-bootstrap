@@ -25,6 +25,10 @@
   padding: 0.625rem 3.25rem;
 }
 
+.prev-btn-img {
+  transform: rotate(180deg);
+}
+
 /* --------------------------------------
  *Extra Section Style 
  ----------------------------------------*/
